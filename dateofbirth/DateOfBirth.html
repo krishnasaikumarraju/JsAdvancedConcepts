@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<script type="text/javascript" src="DateOfBirth.jss"></script>
+
+<link href="style.css" rel="stylesheet">
+
+<script>
+	function action1()
+	{
+		var cal_span=span()
+		document.getElementById("outputCell").innerHTML=life_span;
+	}
+	function action2()
+	{
+		document.getElementById("outputCell").innerText="";
+	}
+</script>
+<body>
+
+<h1> AGE RESULT</h1>
+<form>
+<table>
+	<tr>
+		<td>Date Of Birth:</td>
+		<td><input type="text" name="txt_input"></td>
+	</tr>
+	
+	<tr>
+		<td colspan="2">
+		<input type="button" VALUE="Showresult"   onclick="action1()">
+		<input type="button" VALUE="Hideresult"   onclick="action2()">
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan="2" id="outputCell"></td>
+	</tr>
+	
+</table>
+
+</form>
+</body>
+</html>

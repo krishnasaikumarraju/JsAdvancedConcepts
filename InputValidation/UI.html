@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<link href="styles/style.css" rel="stylesheet">
+<script type="text/javascript" src="scripts/CityClass.js"></script>
+<script type="text/javascript" src="scripts/CitiesCreator.js"></script>
+<script type="text/javascript" src="scripts/StateClass.js"></script>
+<script type="text/javascript" src="scripts/StateListCreator.js"></script>
+<script type="text/javascript" src="scripts/AllStates.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+</head>
+<body onload="loadStates1()">
+<h1>Registration Details</h1>
+<form action="success.html" onsubmit="return checkFormValidity()">
+<table>
+	<tr>
+		<td colspan="2"></td>
+	</tr>
+	<tr>
+		<td>ID</td>
+		<td><input size="10" onkeypress="allowOnlyDigits()" onblur="CheckInRange(this.value)"></td>
+	</tr>
+	<tr class="errorRow">
+		<td colspan="2" class="errorCell">error</td>
+	</tr>
+
+	<tr>
+		<td>Name</td>
+		<td>
+		<input size="15" onkeypress="allowOnlyAlphabets()" onblur="checkIfFilled(1)">
+		<input size="15" onkeypress="allowOnlyAlphabets()" onblur="checkIfFilled(2)">
+		<input size="15" onkeypress="allowOnlyAlphabets()"></td>
+	</tr>
+		<tr class="errorRow">
+		<td colspan="2" class="errorCell">error</td>
+	</tr>
+	
+
+	<tr>
+		<td>Email</td>
+		<td><input></td>
+	</tr>
+	<tr class="errorRow">
+		<td colspan="2" class="errorCell">error</td>
+	</tr>
+
+	<tr>
+		<td>Phone</td>
+		<td><input onkeypress="allowOnlyDigits()" onblur="checkLength(10)"></td>
+	</tr>
+	<tr class="errorRow">
+		<td colspan="2" class="errorCell">error</td>
+	</tr>
+
+	<tr>
+		<td>Gender</td>
+		<td><input type="radio" name="rad_gender" checked="checked">
+		MALE <input type="radio" name="rad_gender"> FEMALE</td>
+	</tr>
+
+	<tr valign="top">
+		<td>Interested In</td>
+		<td><input type="checkbox" name="chk_int" checked="checked">
+		News <input type="checkbox" name="chk_int" checked="checked">
+		Movies <br>
+		<input type="checkbox" name="chk_int" checked="checked">
+		Sports <input type="checkbox" name="chk_int" checked="checked">
+		Tourism <br>
+		<input type="checkbox" name="chk_int" checked="checked"> Books
+		<input type="checkbox" name="chk_int" checked="checked">
+		Trading</td>
+	</tr>
+	<tr>
+		<td>State Name</td>
+		<td><select name="state_name" style="width: 6cm" onchange="loadCities(this.value)">
+		</select></td>
+	</tr>
+
+	<tr>
+		<td>City Name</td>
+		<td><select name="city_name" style="width: 6cm">
+
+		</select></td>
+	</tr>
+
+	<tr>
+		<td><br>
+		<br>
+		<input value="Register" type='submit'> <br>
+		<br>
+		<input value="Clear" type='reset'> <br>
+		</td>
+
+	</tr>
+</table>
+
+</form>
+</body>
+</html>

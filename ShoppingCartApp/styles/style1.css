@@ -1,0 +1,61 @@
+body {
+	margin: 2cm;
+}
+
+p {
+	font-family: "verdana";
+	font-size: 1opt;
+	color: blue;
+	padding: 5mm;
+}
+
+h1 {
+	padding: 5mm;
+	color: maroon;
+}
+
+table {
+	width: 80%;
+}
+
+tr.menuBar {
+	border: solid thick black;
+}
+
+tr.emptyRow {
+	border: none;
+	height: 5mm;
+}
+
+td.menuCell {
+	padding: 2mm;
+	background-color: orange;
+	font-size: 12pt;
+	font-family: verdana;
+	font-weight: bold;
+	border-radius: 3mm;
+	height: 1cm;
+}
+
+td#outputCell {
+	height: 15cm;
+	border: solid thin;
+	width: 100%;
+}
+
+td.itemCell {
+	border: solid thin black;
+	width: 10cm;
+	height: 6cm;
+}
+
+select {
+	margin: 1cm; width : 6cm;
+	height: 1cm;
+	width: 6cm;
+}
+
+div#gallery {
+	width: 100%;
+	padding-left: 2cm;
+}

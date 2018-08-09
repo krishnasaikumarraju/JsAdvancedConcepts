@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<script type="text/javascript" src="NumbersAnalyzer.js"></script>
+
+<link href="style.css" rel="stylesheet">
+
+<script>
+ numb="";
+	function action1(){
+           
+		var input_number=parseInt(document.getElementsByName("txt_input")[0].value)
+		add_result=addNumber(input_number);
+		numb=numb+add_result+",";
+		document.getElementById("outputCell").innerText=numb;
+		}
+	
+
+	function action2(){
+		
+			 	res_min=findMinimum();
+			 	res_max=findMaximum();
+			 	res_total=getTotal();
+			 	res_avg=getAverage();
+	 document.getElementById("outputCell").innerText="Minimum:"+res_min+","+"Maximum:"+res_max+","+"Total:"+res_total+","+"Average:"+res_avg;
+		
+	}
+</script>
+<body>
+
+<h1>Number Finder</h1>
+<form>
+<table>
+	<tr>
+		<td>Number Input</td>
+		<td><input type="text" name="txt_input"></td>
+	</tr>
+	
+	<tr>
+		<td colspan="2">
+		<input type="button" VALUE="ADD" onclick="action1()">
+		<input type="button" VALUE="Show Results" onclick="action2()">
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan="2" id="outputCell"></td>
+	</tr>
+	
+</table>
+
+</form>
+</body>
+</html>

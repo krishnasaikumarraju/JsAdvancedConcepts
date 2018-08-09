@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+
+<link href="styles/style1.css" rel="stylesheet">
+<script src="scripts/Items.js"></script>
+<script src="scripts/Categories.js"></script>
+<script src="scripts/Main.js"></script>
+</head>
+<body onload="praparepage()">
+<table>
+	<tr class="menuBar">
+		<td class="menuCell" id="mc1">Shopping Gallery</td>
+		<td class="menuCell" id="mc2">Show Cart (Summary)</td>
+		<td class="menuCell" id="mc3">Show Cart (Detailed)</td>
+	</tr>
+	<tr class="emptyRow">
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td colspan="3" id="outputCell">
+
+		</td>
+	</tr>
+</table>
+
+	<div id="gallery" style="display:none;">
+		<form><select name="shoppingChoice">
+
+		</select></form>
+		<br>
+		<br>
+		<br>
+		<table id="galleryTable">
+			<tr>
+				<td class="itemCell">ItemName</td>
+				<td class="itemCell">ItemName</td>
+			</tr>
+
+			<tr>
+				<td class="itemCell">ItemName</td>
+				<td class="itemCell">ItemName</td>
+			</tr>
+
+			<tr>
+				<td class="itemCell">ItemName</td>
+				<td class="itemCell">ItemName</td>
+			</tr>
+
+			<tr>
+				<td class="itemCell">ItemName</td>
+				<td class="itemCell">ItemName</td>
+			</tr>
+
+			<tr>
+				<td class="itemCell">ItemName</td>
+				<td class="itemCell">ItemName</td>
+			</tr>
+		</table>
+	</div>
+	
+<div id="cartSummary" style="display:none;">
+		<h1>Cart Summary</h1>
+</div>
+		
+<div id="cartDetail" style="display:none;">
+		<h1>Cart Details</h1>
+</div>
+</body>
+</html>
+
+
+

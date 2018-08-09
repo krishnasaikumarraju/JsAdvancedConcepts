@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<style>]
+li{
+color:green;
+}
+</style>
+<script>
+var list1;
+function f1(){
+list1=document.createElement("ul")
+var division=document.getElementById("div1")
+division.appendChild(list1);
+}
+function f2(){
+var t=document.createTextNode("Ameex")
+var item=document.createElement("li")
+item.setAttribute("class", "important")
+item.addEventListener("click", f5, true);
+item.appendChild(t);
+list1.appendChild(item);
+}
+function f3(){
+	var arr=list1.childNodes;
+	alert(arr.length)
+}
+function f4(){
+	
+	var arr=list1.childNodes;
+	var count=arr.length;
+	for(i=0; i<count; ){
+		var t= arr[i];
+		list1.removeChild(t);
+}
+}
+function f5(){
+	//alert("hello")
+	var tr=window.event.target;
+	list1.removeChild(tr);
+// 	var par=tr.parentElement;
+// 	var arr=par.childNodes;
+// 	var count=arr.length;
+// 	for(i=0; i<count; ){
+// 		var t= arr[i];
+// 		list1.removeChild(t);
+// }
+}
+
+function f6(){
+	var division=document.getElementById("div1");
+	var btn=document.createElement("input");
+	btn.setAttribute("type","button");
+	btn.setAttribute("value","clickme");
+	btn.addEventListener("click",()=>{alert('hi')},true)
+	division.appendChild(btn);
+}
+
+
+
+</script>
+</head>
+<body onload="f1()">
+
+<input type="button" value="ACTION" onclick="f2()">
+<input type="button" value="ACTION2" onclick="f3()">
+<input type="button" value="ACTION3" onclick="f4()">
+<input type="button" value="ACTION4" onclick="f6()">
+<div id="div1"></div>
+
+  
+</body>
+</html>

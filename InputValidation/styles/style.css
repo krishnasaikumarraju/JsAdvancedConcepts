@@ -1,0 +1,16 @@
+body{
+	margin: 1cm;
+	font-family: verdana;
+	font-size: 10pt;	
+}
+
+form{
+	padding: 1cm;
+	border: solid thin;	
+}
+
+tr.errorRow{
+	color:red;
+	font-style: italic;
+	display:none;	
+}

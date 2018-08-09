@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+<form>
+Id:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input><br><br>
+Name:<input><br><br>
+Salary:<input> <br><br>
+<input type="button" value="ADD" onclick="addToList()">
+</form>
+
+<input type="button" value="Show All" onclick="showAll()"><br>
+
+<table id="empList" border="1">
+
+
+</table>
+
+<table>
+	<tr>
+		<td>TotalSalaries:</td>
+
+		<td id="Tsalary"></td>
+
+	</tr>
+	
+	<tr>
+		<td>Maximum:</td>
+
+		<td  id="tMinimum"></td>
+
+	</tr>
+	
+	<tr>
+		<td>ShowMinimum:</td>
+
+		<td id="tMaximum"></td>
+
+	</tr>
+</table>
+<br>
+
+<form >
+Employee Filter :<input>
+Boolean Result:<input>
+<input type='button' value="Show" onclick="filterList()">
+
+</form>
+<table>
+
+	<tr>
+		<td>Employee Results:</td>
+		<td  id="filteredlist" ></td>
+	</tr>
+	<br>
+	<tr>
+		<td>Mapped Array:</td>
+		<td id="mappedlist"></td>
+	</tr>
+	<br>
+	<tr>
+		<td>Boolean Value:</td>
+		<td id="booleanResult" ></td>
+	</tr>
+
+
+</table>
+
+
+</body>
+
+</html>
